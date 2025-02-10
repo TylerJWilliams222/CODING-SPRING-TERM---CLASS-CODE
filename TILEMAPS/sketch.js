@@ -25,9 +25,9 @@ function draw() {
       tileMap[tileX][tileY].debugGrid();
     }
   }
-  tileMap[5][6].displayMessage();   //display message on tiles  5,6 + 0,8 + 3,4 + 3,0                                          
-  tileMap[0][8].displayMessage();   
-  tileMap[3][4].displayMessage();   //first [] is x axis, second [] is y axis
+  tileMap[5][6].displayMessage();
+  tileMap[0][8].displayMessage();
+  tileMap[3][4].displayMessage();
   tileMap[3][0].displayMessage();
 }
 
@@ -41,11 +41,11 @@ constructor(tileX, tileY, tileSize, tileID) {
   this.tileID = tileID;
 }
 
-displayMessage() {    //text settings
+displayMessage() {
   let xPadding = 2;
   let yPadding = 40;
   strokeWeight(1);
-  stroke("black");    //text colour
+  stroke("black");
   fill("white");
   textSize(10); 
   this.xPos + xPadding;
